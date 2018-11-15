@@ -4,7 +4,10 @@ Created on Nov 10, 2018
 @author: Tyler
 '''
 
-from tkinter import *
+try:
+    from Tkinter import *
+except ImportError:
+    from tkinter import *
 import os
 import math
 
@@ -409,7 +412,7 @@ def writeHeader():
         
         bits = 0
         if len(states) > 0:
-            bits = math.ceil(math.log2(len(states)))
+            bits = math.ceil(math.log(len(states))/math.log(2))
             if bits == 0: bits = 1
             f.write('Parameter ')
             f.write('{} = {}\'d0'.format(states[0], bits))
