@@ -55,7 +55,11 @@ def done():
 
 ########################################################################## Method to write pin assignments file    
 def writePins():
-    with open('Pin_Assignments.csv','w') as g:    
+    
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    fileName = os.path.join(dir_path,'Pin_Assignments.csv')
+    
+    with open(fileName,'w') as g:    
         g.write('To,Direction,Location\n\
         AUD_ADCDAT,Input,PIN_D2\n\
         AUD_ADCLRCK,Bidir,PIN_C2\n\
