@@ -416,7 +416,7 @@ def writeHeader():
         
         bits = 0
         if len(states) > 0:
-            bits = math.ceil(math.log(len(states))/math.log(2))
+            bits = int(math.ceil(math.log(len(states))/math.log(2)))
             if bits == 0: bits = 1
             f.write('Parameter ')
             f.write('{} = {}\'d0'.format(states[0], bits))
