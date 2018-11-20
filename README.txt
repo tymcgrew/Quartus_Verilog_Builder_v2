@@ -31,11 +31,11 @@ INSTRUCTIONS
 
 To use this tool, run the "fileBuilder.py" Python script by double clicking it or right clicking and 
 open with Python. 
-You should then be presented with a GUI where you can input the module name, select
+You should then be presented with a GUI where you can input the module name, select 
 the FPGA components you need, and 
 enter the names of the states for the FSM. When you are finished, click 
 the "Done" button and a .v Verilog header file 
-should be in the Quartus_Verilog_Builder_v2 folder, along 
+will be created in the Quartus_Verilog_Builder_v2 folder, along 
 with a .csv pin assignments file.
 
 
@@ -56,7 +56,7 @@ and select the .csv file from the Quartus_Verilog_Builder_v2 folder.
 
 
 
-*****NOTE: The fileBuilder just builds the outline Verilog and you still have to implement the logic. Control-f, type "#####" to find all the lines that need code added
+*****NOTE: The fileBuilder just builds the outline code and you still have to implement the logic. Control-f, type "#####" to find all the lines that need code added
 
 
 
